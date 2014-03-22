@@ -4,7 +4,7 @@ module StripeEvent
       StripeEvent.instrument(params)
       head :ok
     rescue StripeEvent::UnauthorizedError
-      head :unauthorized
+      head :ok
     end
   end
 end
